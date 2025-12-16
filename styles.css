@@ -88,9 +88,67 @@ footer {
   padding: 40px;
 }
 
+.venue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 350px;
+}
+
+.venue-image {
+  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d")
+    center/cover no-repeat;
+}
+
+.venue-content {
+  background: #e5e7eb;
+  padding: 60px;
+}
+
+.venue-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
 footer button {
   margin-top: 15px;
   padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sponsors {
+  background: #7c3aed;
+  color: white;
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.sponsors .subtitle {
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.event-summary {
+  background: #0f172a;
+  color: white;
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.event-summary button {
+  background: #7c3aed;
+  color: white;
+  padding: 14px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
