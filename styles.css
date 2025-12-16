@@ -54,8 +54,22 @@
 }
 
 .speaker img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.speaker h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.speaker p {
+  font-size: 14px;
+  color: #666;
 }
 
 /* AGENDA */
@@ -127,4 +141,12 @@ footer button {
   margin-top: 15px;
   padding: 10px 25px;
   cursor: pointer;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .speaker img {
+    width: 90px;
+    height: 90px;
+  }
 }
