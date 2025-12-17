@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +53,6 @@
   color: #fff;
   padding: 12px 32px;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: bold;
   cursor: pointer;
   border: none;
@@ -73,7 +73,7 @@
   margin-bottom: 50px;
 }
 
-/* SPEAKERS */
+/* SPEAKERS (CIRCULAR – CROPPING OK) */
 .speakers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -87,7 +87,8 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover;      /* faces only */
+  object-position: center;
   margin-bottom: 12px;
 }
 
@@ -101,7 +102,7 @@
   color: #555;
 }
 
-/* TIMELINE / ROADMAP */
+/* TIMELINE */
 .timeline {
   max-width: 600px;
   margin: auto;
@@ -121,19 +122,24 @@
   min-width: 80px;
 }
 
-/* SPONSORS */
+/* SPONSORS & PARTNERS (NO CROPPING – LOGOS SAFE) */
 .sponsors {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  max-width: 900px;
   margin: auto;
   align-items: center;
+  justify-items: center;
 }
 
+/* LOGO CONTAINER */
 .sponsors img {
-  max-width: 120px;
-  margin: auto;
+  max-width: 160px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;   /* THIS PREVENTS CUTTING */
   filter: grayscale(100%);
 }
 
@@ -161,20 +167,27 @@ footer a {
 }
 
 .btn-secondary {
-  display: inline-block;
   margin-top: 15px;
   padding: 10px 25px;
   background: var(--accent);
   color: #fff;
-  text-decoration: none;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
 
-/* MOBILE */
+/* MOBILE FIXES */
 @media (max-width: 600px) {
   .hero-content h1 {
     font-size: 30px;
+  }
+
+  .section {
+    padding: 50px 15px;
+  }
+
+  .sponsors img {
+    max-width: 140px;
+    max-height: 80px;
   }
 }
