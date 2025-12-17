@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Glowvai Founders Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <!-- HERO -->
 <header class="hero">
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <img src="assets/images1/hero.jpg"
     <h1>Glowvai Founders Hub</h1>
     <p>Early-stage founders, creators & builders meet to learn, speak and connect.</p>
-    <button onclick="register()">Register Now</button>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-primary">
+      Register Now
+    </a>
   </div>
 </header>
 
 <!-- SPEAKERS -->
 <section class="section light">
-  <h2 class="section-title">The Speakers</h2>
+  <h2 class="section-title">Speakers</h2>
 
   <div class="speakers">
     <div class="speaker">
-      <img src="assets/images1/sardhar.jpg" alt="Sardhar Musthafa">
+      <img src="assets/images1/sardhar.jpg">
       <h3>Sardhar Musthafa</h3>
       <p>Founder – Glowvai, Vaikhar, Vai Industries</p>
     </div>
 
     <div class="speaker">
-      <img src="assets/images1/rahimath.jpg" alt="Rahimath">
+      <img src="assets/images1/rahimath.jpg">
       <h3>Rahimath</h3>
       <p>Founder – Glowvai</p>
     </div>
 
     <div class="speaker">
-      <img src="assets/images1/gopi.jpg" alt="Erugoni Chinna Gopi">
+      <img src="assets/images1/gopi.jpg">
       <h3>Erugoni Chinna Gopi</h3>
       <p>Founder – LearnX | Co-Founder – Vaikhar</p>
     </div>
   </div>
 </section>
 
-<!-- AGENDA -->
-<section class="section dark">
-  <h2 class="section-title">Agenda</h2>
+<!-- AGENDA / ROADMAP -->
+<section class="section lavender">
+  <h2 class="section-title">Event Roadmap</h2>
 
-  <div class="agenda">
-    <div><span>02:00 PM</span> Welcome & Networking</div>
-    <div><span>02:30 PM</span> Speaker Sessions</div>
-    <div><span>03:30 PM</span> Business & Startup Learnings</div>
-    <div><span>04:30 PM</span> Founders Interaction</div>
-    <div><span>05:30 PM</span> Open Networking</div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>02:00 PM</span>
+      <p>Welcome & Networking</p>
+    </div>
+    <div class="timeline-item">
+      <span>02:30 PM</span>
+      <p>Speaker Sessions</p>
+    </div>
+    <div class="timeline-item">
+      <span>03:30 PM</span>
+      <p>Startup & Business Learnings</p>
+    </div>
+    <div class="timeline-item">
+      <span>04:30 PM</span>
+      <p>Founders Interaction</p>
+    </div>
+    <div class="timeline-item">
+      <span>05:30 PM</span>
+      <p>Open Networking</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section class="section light">
+  <h2 class="section-title">Our Sponsors</h2>
+
+  <div class="sponsors">
+    <img src="assets/sponsors/s1.png">
+    <img src="assets/sponsors/s2.png">
+    <img src="assets/sponsors/s3.png">
+    <img src="assets/sponsors/s4.png">
   </div>
 </section>
 
 <!-- EVENT INFO -->
-<section class="section light">
+<section class="section offwhite">
   <div class="info-grid">
     <div>
       <h3>📍 Hyderabad</h3>
       <p>Jan 1, 2026</p>
-      <p>2:00 PM – 6:00 PM</p>
+      <p>2:00 – 6:00 PM</p>
       <p>₹299</p>
     </div>
 
     <div>
       <h3>📍 Vijayawada</h3>
       <p>Jan 2, 2026</p>
-      <p>2:00 PM – 6:00 PM</p>
-      <p>₹299 (Speaker) | ₹99 (Visitor)</p>
+      <p>2:00 – 6:00 PM</p>
+      <p>₹299 | ₹99</p>
     </div>
 
     <div>
@@ -82,27 +111,17 @@
   </div>
 </section>
 
-<!-- VENUE -->
-<section class="venue">
-  <div class="venue-content">
-    <h2>The Venue</h2>
-    <p>
-      Venue details will be shared privately with registered participants
-      to ensure a focused and high-quality audience.
-    </p>
-    <p>
-      <strong>Hyderabad – Jan 1, 2026</strong><br>
-      <strong>Vijayawada – Jan 2, 2026</strong>
-    </p>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
-  <p>Instagram: @ig_cyberwar | @glowvai</p>
-  <button onclick="register()">Register</button>
+  <p>
+    Follow us on
+    <a href="https://instagram.com/glowvai" target="_blank">Instagram</a>
+  </p>
+
+  <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="btn-secondary">
+    Register Now
+  </a>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
