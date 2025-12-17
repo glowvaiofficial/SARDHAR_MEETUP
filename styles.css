@@ -16,7 +16,7 @@
 /* HERO */
 .hero {
   height: 100svh;
-  background: url("assets/images1/hero.jpg") center/cover no-repeat;
+  background: url("assets/images1/hero.jpg") center / cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -26,18 +26,19 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
   position: relative;
   text-align: center;
   color: #fff;
-  max-width: 600px;
+  max-width: 650px;
+  padding: 20px;
 }
 
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 12px;
 }
 
@@ -49,9 +50,12 @@
 .btn-primary {
   background: var(--accent);
   color: #fff;
-  padding: 12px 30px;
-  text-decoration: none;
+  padding: 12px 32px;
   border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 
 /* SECTIONS */
@@ -87,7 +91,17 @@
   margin-bottom: 12px;
 }
 
-/* TIMELINE */
+.speaker h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.speaker p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* TIMELINE / ROADMAP */
 .timeline {
   max-width: 600px;
   margin: auto;
@@ -96,12 +110,15 @@
 }
 
 .timeline-item {
-  margin-bottom: 30px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
 .timeline-item span {
   font-weight: bold;
   color: var(--accent);
+  min-width: 80px;
 }
 
 /* SPONSORS */
@@ -151,9 +168,13 @@ footer a {
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
 
 /* MOBILE */
 @media (max-width: 600px) {
-  .hero-content h1 { font-size: 30px; }
+  .hero-content h1 {
+    font-size: 30px;
+  }
 }
