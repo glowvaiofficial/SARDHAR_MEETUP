@@ -16,7 +16,7 @@
 
 /* HERO */
 .hero {
-  height: 100svh;
+  height: 80svh;
   background: url("assets/images1/hero.jpg") center / cover no-repeat;
   position: relative;
   display: flex;
@@ -39,8 +39,8 @@
 }
 
 .hero-content h1 {
-  font-size: 42px;
-  margin-bottom: 12px;
+  font-size: 44px;
+  margin-bottom: 15px;
 }
 
 .hero-content p {
@@ -187,7 +187,7 @@ footer a {
   }
 
   .sponsors img {
-    max-width: 140px;
-    max-height: 80px;
+    max-width: 180px;
+    max-height: 180px;
   }
 }
