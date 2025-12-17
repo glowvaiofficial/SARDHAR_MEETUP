@@ -135,7 +135,7 @@
 
 /* LOGO BOX — MAKES ALL LOGOS LOOK SAME SIZE */
 .logo-box {
-  width: 220px;
+  width: 100px;
   height: 140px;
   display: flex;
   align-items: center;
