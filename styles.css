@@ -27,7 +27,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.55);
 }
 
 .hero-content {
@@ -120,21 +120,20 @@
   color: var(--accent);
 }
 
-/* SPONSORS — FIXED SIZE & CLEAN */
+/* SPONSORS & PARTNERS */
 .sponsors {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
   max-width: 900px;
   margin: auto;
-  align-items: center;
   justify-items: center;
+  align-items: center;
 }
 
-/* LOGO WRAPPER (THIS IS THE KEY FIX) */
 .logo-box {
-  width: 160px;     /* CONTROLLED */
-  height: 90px;     /* CONTROLLED */
+  width: 150px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +189,7 @@ footer a {
   }
 
   .logo-box {
-    width: 140px;
-    height: 80px;
+    width: 120px;
+    height: 65px;
   }
 }
